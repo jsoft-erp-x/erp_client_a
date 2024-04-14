@@ -9,9 +9,21 @@
         "source": "https://github.com/codeigniter4/CodeIgniter4",
         "slack": "https://codeigniterchat.slack.com"
     },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "vendor-repo/ci_erp/core"
+        },
+        {
+            "type": "path",
+            "url": "vendor-repo/ci_erp_module/blog"
+        }
+    ],
     "require": {
         "php": "^8.1",
         "codeigniter4/framework": "^4.0"
+        ,"ci_erp/core": "dev-main"
+        ,"ci_erp_module/blog": "dev-main"
     },
     "require-dev": {
         "fakerphp/faker": "^1.9",
@@ -20,7 +32,7 @@
     },
     "autoload": {
         "psr-4": {
-            "App\\": "app/"
+              "App\\": "app/"
         },
         "exclude-from-classmap": [
             "**/Database/Migrations/**"
