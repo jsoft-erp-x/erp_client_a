@@ -4,8 +4,63 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "657ac079313fab046eb8c29fe1d6992b",
+    "content-hash": "693e2d363be090ae5faecf91bc5f8c61",
     "packages": [
+        {
+            "name": "ci_erp/core",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "vendor-repo/ci_erp/core",
+                "reference": "e6987cd87b786a244e4091a857c88f895fff2baf"
+            },
+            "type": "project",
+            "autoload": {
+                "psr-4": {
+                    "ci_erp\\core\\": "/"
+                }
+            },
+            "authors": [
+                {
+                    "name": "Mookesh nanda",
+                    "email": "mookeshnanda@gmail.com"
+                }
+            ],
+            "transport-options": {
+                "relative": true
+            }
+        },
+        {
+            "name": "ci_erp_module/blog",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "vendor-repo/ci_erp_module/blog",
+                "reference": "5a1bffc15e04e403a3b08cdef34ec6eb24a6dcc7"
+            },
+            "require": {
+                "ci_erp/core": "dev-main"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^10.5.16"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "ci_erp\\modules\\blog\\": "/"
+                }
+            },
+            "authors": [
+                {
+                    "name": "Mookesh nanda",
+                    "email": "mookeshnanda@gmail.com"
+                }
+            ],
+            "description": "blog-module",
+            "transport-options": {
+                "relative": true
+            }
+        },
         {
             "name": "codeigniter4/framework",
             "version": "v4.5.1",
@@ -79,6 +134,46 @@
                 "source": "https://github.com/codeigniter4/CodeIgniter4"
             },
             "time": "2024-04-14T04:18:29+00:00"
+        },
+        {
+            "name": "enyo/dropzone",
+            "version": "v5.9.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dropzone/dropzone-packagist.git",
+                "reference": "286b2dc1f1195bd12169e4c9d5f91cfbe46e245f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dropzone/dropzone-packagist/zipball/286b2dc1f1195bd12169e4c9d5f91cfbe46e245f",
+                "reference": "286b2dc1f1195bd12169e4c9d5f91cfbe46e245f",
+                "shasum": ""
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Matias Meno",
+                    "email": "m@tias.me",
+                    "homepage": "http://www.yesmeno.com"
+                }
+            ],
+            "description": "Handles drag and drop of files for you.",
+            "homepage": "http://www.dropzonejs.com",
+            "keywords": [
+                "drag and drop",
+                "dragndrop",
+                "file upload",
+                "upload"
+            ],
+            "support": {
+                "issues": "https://github.com/dropzone/dropzone-packagist/issues",
+                "source": "https://github.com/dropzone/dropzone-packagist/tree/v5.9.3"
+            },
+            "time": "2021-09-21T17:03:36+00:00"
         },
         {
             "name": "laminas/laminas-escaper",
@@ -191,6 +286,124 @@
                 "source": "https://github.com/php-fig/log/tree/3.0.0"
             },
             "time": "2021-07-14T16:46:02+00:00"
+        },
+        {
+            "name": "tatter/assets",
+            "version": "v3.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tattersoftware/codeigniter4-assets.git",
+                "reference": "b0f6177d36b8a9bfa7ad7ab37c3a0b60aed75fca"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tattersoftware/codeigniter4-assets/zipball/b0f6177d36b8a9bfa7ad7ab37c3a0b60aed75fca",
+                "reference": "b0f6177d36b8a9bfa7ad7ab37c3a0b60aed75fca",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.4 || ^8.0"
+            },
+            "require-dev": {
+                "codeigniter4/framework": "^4.1",
+                "tatter/tools": "^2.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Tatter\\Assets\\": "src"
+                },
+                "exclude-from-classmap": [
+                    "**/Database/Migrations/**"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Matthew Gatner",
+                    "email": "mgatner@tattersoftware.com",
+                    "homepage": "https://tattersoftware.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Asset publishing and loading for CodeIgniter 4",
+            "homepage": "https://github.com/tattersoftware/codeigniter4-assets",
+            "keywords": [
+                "assets",
+                "codeigniter",
+                "codeigniter4",
+                "css",
+                "javascript",
+                "loader"
+            ],
+            "support": {
+                "issues": "https://github.com/tattersoftware/codeigniter4-assets/issues",
+                "source": "https://github.com/tattersoftware/codeigniter4-assets/tree/v3.0.0"
+            },
+            "funding": [
+                {
+                    "url": "https://paypal.me/tatter",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/tattersoftware",
+                    "type": "github"
+                }
+            ],
+            "time": "2023-09-28T22:46:23+00:00"
+        },
+        {
+            "name": "twbs/bootstrap",
+            "version": "v5.3.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/twbs/bootstrap.git",
+                "reference": "6e1f75f420f68e1d52733b8e407fc7c3766c9dba"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/twbs/bootstrap/zipball/6e1f75f420f68e1d52733b8e407fc7c3766c9dba",
+                "reference": "6e1f75f420f68e1d52733b8e407fc7c3766c9dba",
+                "shasum": ""
+            },
+            "replace": {
+                "twitter/bootstrap": "self.version"
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mark Otto",
+                    "email": "markdotto@gmail.com"
+                },
+                {
+                    "name": "Jacob Thornton",
+                    "email": "jacobthornton@gmail.com"
+                }
+            ],
+            "description": "The most popular front-end framework for developing responsive, mobile first projects on the web.",
+            "homepage": "https://getbootstrap.com/",
+            "keywords": [
+                "JS",
+                "css",
+                "framework",
+                "front-end",
+                "mobile-first",
+                "responsive",
+                "sass",
+                "web"
+            ],
+            "support": {
+                "issues": "https://github.com/twbs/bootstrap/issues",
+                "source": "https://github.com/twbs/bootstrap/tree/v5.3.3"
+            },
+            "time": "2024-02-20T15:14:29+00:00"
         }
     ],
     "packages-dev": [
@@ -2054,7 +2267,10 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "ci_erp/core": 20,
+        "ci_erp_module/blog": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {

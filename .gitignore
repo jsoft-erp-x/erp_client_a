@@ -88,6 +88,11 @@ vendor/
 vendor-repo/
 
 #-------------------------
+# Public folder
+#-------------------------
+public/assets/
+
+#-------------------------
 # IDE / Development Files
 #-------------------------
 
