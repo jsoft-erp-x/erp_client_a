@@ -12,17 +12,22 @@
     "repositories": [
         {
             "type": "path",
-            "url": "vendor-repo/ci_erp/core"
+            "url": "vendor-repo/jsuitescloud/core"
         },
         {
             "type": "path",
-            "url": "vendor-repo/ci_erp_module/blog"
+            "url": "vendor-repo/jsuitescloud/blog"
+        },
+        {
+            "type": "path",
+            "url": "vendor-repo/jsuitescloud/hr"
         }
     ],
     "require": {
         "php": "^8.1",
-        "ci_erp/core": "dev-main",
-        "ci_erp_module/blog": "dev-main",
+        "jsuitescloud/core": "dev-main",
+        "jsuitescloud/blog": "dev-main",
+        "jsuitescloud/hr": "dev-main",
         "codeigniter4/framework": "^4.0",
         "enyo/dropzone": "^5.9",
         "tatter/assets": "^3.0",
