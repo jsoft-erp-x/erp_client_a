@@ -74,7 +74,6 @@ class Filters extends BaseFilters
             // 'invalidchars',
         ],
         'after'  => [
-            'assets' => ['except' => 'api/*'],
         ],
     ];
 
