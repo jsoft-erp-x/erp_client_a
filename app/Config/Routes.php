@@ -5,4 +5,4 @@ use CodeIgniter\Router\RouteCollection;
 /**
  * @var RouteCollection $routes
  */
-$routes->get("/", "\jsuitescloud\core\Controllers\DashboardController::index");
+$routes->get("/", "\Jsuitescloud\Core\Controllers\DashboardController::index");
